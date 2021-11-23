@@ -18,9 +18,23 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
+"""urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('history',views.history, name=''),
+    path('amazon',views.amazon, name=''),
+]"""
+
+"""urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.index, name='index'),
+    path('removepunc',views.removepunc, name='rempun'),
+    path('capilatizefirst',views.capfirst, name='capfirst'),
+
+]"""
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index, name='index'),
-    path('history',views.history, name=''),
-    path('amazon',views.amazon, name=''),
+    path('analyze',views.analyze, name='analyze'),
+
 ]
